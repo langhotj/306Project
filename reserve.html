@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+<head>
+    <title>JMU Smart Rooms</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <h1><a href="#">JMU Smart Spots</h1>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reserve.html">Reserve Room</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+<br>
+            Search Rooms
+            <form>
+            <input type="text" name="search" value="search...">
+            <input type="submit" value="Submit">
+            </form>
+
+<br>
+        <form action="" method="post">
+            <Table Border=1>
+                <tr>
+                    <td>BuildingID:</td>
+                    <td><input type="integer" name="id" value="{{id}}"/></td>
+                <tr>
+                    <td>Number of Rooms:</td>
+                    <td><input type="integer" name="numberofrooms" value="{{numberofrooms}}"/></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" value="{{address}}"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+
+        Open Rooms:
+        <select name="rooms">
+            <option value="select">Select Room</option>
+            <option value="Carrier">Carrier</option>
+            <option value="ECL">ECL</option>
+        </select>
+        </p>
+
+
+        <p>
+            Time:
+            <select name="Time">
+                <option value="select">Select Time</option>
+                <option value="7 AM">7 AM</option>
+                <option value="8 AM">8 AM</option>
+                <option value="9 AM">9 AM</option>
+                <option value="10 AM">10 AM</option>
+                <option value="11 AM">11AM</option>
+                <option value="12 PM">12 PM</option>
+                <option value="1 PM">1 PM</option>
+                <option value="2 PM">2 PM</option>
+                <option value="3 PM">3 PM</option>
+                <option value="4 PM">4 PM</option>
+                <option value="5 PM">5 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="7 PM">7 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="9 PM">9 PM</option>
+            </select>
+        </p>
+
+        <p>
+            Duration:
+            <select name="Duration">
+                <option value="select">Select Duration</option>
+                <option value="15 Min">15 Min</option>
+                <option value="30 Min">30 Min</option>
+                <option value="1 Hour">1 Hour</option>
+                <option value="2 Hours">2 Hours</option>
+
+            </select>
+        </p>
+
+
+</body>
+
+</html>
